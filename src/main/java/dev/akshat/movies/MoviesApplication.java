@@ -14,7 +14,7 @@ public class MoviesApplication {
 		SpringApplication.run(MoviesApplication.class, args);
 	}
 
-//	@GetMapping("/root") // annother annotation that lets the framwork know to GET requests onto specific handler methods.
+//	@GetMapping("/root") // another annotation that lets the framework know to GET requests onto specific handler methods.
 //	public String apiRoot(){
 //		return "Hello, World";
 //	}

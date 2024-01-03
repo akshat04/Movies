@@ -25,8 +25,8 @@ public class MovieController {
     }
     // What pathVariable does is it convert whatever we are GETTING from {id} to convert it
     // into a object variable id;
-    @GetMapping("/{imdbid}")
-    public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbid){
-        return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(imdbid),HttpStatus.OK);
+    @GetMapping("/{imdbId}")
+    public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId){
+        return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(imdbId),HttpStatus.OK);
     }
 }

@@ -26,7 +26,7 @@ public class Movie {
     private List<String> backdrops;
     // This is called manual reference relationship
     @DocumentReference // this will cause the database to store only IDs of the review. And the review will be in a separate collection
-    private List<Review> reviewIDs;
+    private List<Review> reviews;
 
 }
 

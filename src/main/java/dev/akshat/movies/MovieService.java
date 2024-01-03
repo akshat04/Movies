@@ -17,7 +17,7 @@ public class MovieService {
     }
     // Optional is used when a function can return null values. So you add optional before the
     // return type.
-    public Optional<Movie> singleMovie(String imdbid){
-        return movieRepository.findMovieByImdbId(imdbid);
+    public Optional<Movie> singleMovie(String imdbId){
+        return movieRepository.findMovieByImdbId(imdbId);
     }
 }
