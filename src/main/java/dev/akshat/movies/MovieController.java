@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/movies")
 public class MovieController {
     @GetMapping
-    public ResponseEntity<String> allMovies(){
+    public ResponseEntity<String> getAllMovies(){
         // RespnseEntity represent the whole HTTP response. Can use to fully configure the HTTP reponse.
         return new ResponseEntity<String>("All Movies", HttpStatus.OK);
-
     }
 }
