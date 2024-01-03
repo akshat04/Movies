@@ -1,0 +1,32 @@
+package dev.akshat.movies;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Update;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReviewService {
+    // reference to review repository
+    @Autowired
+    private ReviewRepository reviewRepository;
+
+    @Autowired
+    // other way to talk to database is by a template.
+    // templates are used to form dynamic query to do the job inside the database WITHOUT using the repository
+    private MongoTemplate mongoTemplate;
+
+    public Review createReview(String reviewBody, String imdbId){
+        Review review = reviewRepository.insert(new Review(reviewBody));
+
+        mongoTemplate.update(Movie.class)
+                .matching(Criteria.where("imdbId").is(imdbId))
+                .apply(new Update().push("reviewIds").value(review))
+                .first();
+
+        return review;
+
+    }
+
+}

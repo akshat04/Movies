@@ -16,5 +16,10 @@ public class Review {
     @Id
     private ObjectId id;
     private String body;
-
+    //We have an Allargsconstructor and noArgsConstructor but since IDs are autogenrated we cannot
+    //pass an id to this class. So,
+    //Creating a custom constructor that takes only the body.
+    public Review(String body) {
+        this.body = body;
+    }
 }
