@@ -13,3 +13,6 @@
 In order to declare the paths where our compoments will reside, in order to map the routes to our compoments as it were, we are going to use relevant components from the "React-router-DOM-npm" package.
 
 "Material-UI-carousel" another package to implement carasoul.
+
+
+The command {"ngrok-skip-browser-warnings":"true"} is typically used in a software development context. It relates to ngrok, which is a tool that creates a secure tunnel to a local server on your computer, making it accessible over the internet. This is commonly used for web development, allowing developers to expose their local development servers to the internet for testing or sharing purposes.
