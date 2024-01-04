@@ -16,3 +16,19 @@ In order to declare the paths where our compoments will reside, in order to map 
 
 
 The command {"ngrok-skip-browser-warnings":"true"} is typically used in a software development context. It relates to ngrok, which is a tool that creates a secure tunnel to a local server on your computer, making it accessible over the internet. This is commonly used for web development, allowing developers to expose their local development servers to the internet for testing or sharing purposes.
+
+
+React hooks-
+
+Whats the point?
+- Reason 1 - Classes confuse both people and machines.
+- Reason 2 - Its' hard to reuse staeful logic between components.
+- Reason 3 - Complex components become hard to understand.
+
+Rules of using Hooks-
+Called only at the top level of a components.
+Don’t call Hook from inside a loop, because it will cause an error. 
+Call Hook from inside the function that defines a component. Don’t call Hook from inside another function
+(like a render prop). Instead, always unwrap the inputs (props or state) to their most basic form before calling them. You can do this by “destructuring” the props object.
+
+
