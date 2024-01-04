@@ -10,6 +10,7 @@ import Reviews from './components/reviews/Reviews';
 import NotFound from './components/notFound/NotFound';
 
 function App() {
+  
 
   const [movies, setMovies] = useState();
   const [movie, setMovie] = useState();
