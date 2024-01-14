@@ -32,7 +32,7 @@
         <h2>Getting Started 🔍</h2>
         <p>To get a local copy up and running follow these simple steps:</p>
         <ol>
-            <li>Clone the repository: <code>git clone [your-repository-link]</code></li>
+            <li>Clone the repository: <code>git clone https://github.com/akshat04/Movies</code></li>
             <li>Navigate to the project directory: <code>cd movie-portal</code></li>
             <!-- Include other steps as necessary -->
         </ol>
@@ -50,12 +50,8 @@
         </ol>
     </section>
 
- <section>
-        <h2>License 📝</h2>
-        <p>This project is licensed under the [Your License] - see the <code>LICENSE.md</code> file for details.</p>
-    </section>
 
  <section>
         <h2>Contact 📫</h2>
-        <p>Your Name - <a href="mailto:akshatshrivastava0407@example.com">akshatshrivastava0407@example.com</a></p>
+        <p>Akshat Shrivastava - <a href="mailto:akshatshrivastava0407@gmail.com">akshatshrivastava0407@gmail.com</a></p>
 </section>
